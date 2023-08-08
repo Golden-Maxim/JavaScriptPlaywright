@@ -22,7 +22,7 @@ export class Navigation {
             this.burgerMenuMobile.waitFor();
             this.burgerMenuMobile.click();
         }
-        this.page.pause();
+    
         await this.checkoutLink.waitFor();
         await this.checkoutLink.click();
         await this.page.waitForURL("/basket");

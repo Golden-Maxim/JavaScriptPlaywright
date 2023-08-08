@@ -75,7 +75,7 @@ export class DeliveryDetails {
       //  console.warn(await this.countryDropDown.inputValue())
         expect(await this.savedCountry.first().innerText()).toBe(await this.countryDropDown.inputValue())
 
-     //   await this.page.pause();
+     
     }
 
 
@@ -83,7 +83,7 @@ export class DeliveryDetails {
        await this.continueToPayment.waitFor();
        await this.continueToPayment.click();
        await this.page.waitForURL(/\/payment/, {timeout: 3000})
-       //await this.page.pause();
+    
     }
 
 }
