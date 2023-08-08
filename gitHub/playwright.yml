@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 
 jobs:
-  playwrightTests:
+  playwrighttests:
     runs-on: ubuntu-latest
     steps:
      - name: Checkout repository
