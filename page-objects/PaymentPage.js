@@ -64,7 +64,7 @@ export class PaymentPage {
         await expect(priceAfterDiscount).toBeLessThan(priceBeforeDiscount);
         console.warn(priceBeforeDiscount);
 
-       // await this.page.pause();
+      
  
     }
 
@@ -72,7 +72,7 @@ export class PaymentPage {
         await this.ownerCardInput.waitFor();
         await this.ownerCardInput.fill(cardInfo.owner)   
 
-       // await this.page.pause();
+    
 
         await this.cardNumberInput.waitFor();
         this.cardNumberInput.focus();
@@ -86,7 +86,7 @@ export class PaymentPage {
         this.cardNumberInput.focus();
         await this.cvsCodeInput.fill(cardInfo.cvsCode);   
         
-        //await this.page.pause();
+    
     }
 
     completePayment = async () =>{

@@ -26,7 +26,7 @@ export class Checkout {
         await specificRemoveBtn.waitFor();
         await specificRemoveBtn.click();
         await expect(this.basketCards).toHaveCount(itemsBeforeRemove-1)
-      //  await this.page.pause();
+    
     }
 
     continueToCheckOut = async() =>{

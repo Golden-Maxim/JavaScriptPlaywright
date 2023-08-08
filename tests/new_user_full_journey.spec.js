@@ -12,7 +12,7 @@ import { paymentDetails as cardInfo} from "../data/paymentDetails.js";
 
 
 
-test.skip("New user full end to end journey", async({page}) => {
+test("New user full end to end journey", async({page}) => {
 
    const productPage = new ProductsPage(page);
    await productPage.visit();
@@ -24,7 +24,7 @@ test.skip("New user full end to end journey", async({page}) => {
    await productPage.addProductToBasket(1);
    await productPage.addProductToBasket(2);
 
-  // await page.pause();
+  
 
    const navigation = new Navigation(page);
    await navigation.goToCheckout();
