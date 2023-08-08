@@ -7,7 +7,7 @@ jobs:
   playwrightTests:
     runs-on: ubuntu-latest
     steps:
-      -name: Checkout repository
+     - name: Checkout repository
        uses: actions/checkout@v2
-      -name: Say Hello
-       run: echo Hello
+     - name: Say Hello
+       run: echo Hello  
